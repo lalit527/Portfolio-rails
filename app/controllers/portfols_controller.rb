@@ -34,6 +34,10 @@ class PortfolsController < ApplicationController
     end
   end
 
+  def show
+    @portfolio_item = Portfol.find(params[:id])
+  end
+
   private
     def portfolio_params
       params.require(:portfol).permit(:title, :subtitle, :body)
