@@ -8,5 +8,6 @@
   <p><%= item.body %></p>
   <%= image_tag item.thumb_image unless item.thumb_image.nil? %>
   <%= link_to "Edit", edit_portfol_path(item) %>
+  <td><%= link_to 'Delete', portfol_path(item), method: :delete, data: { confirm: 'Are you sure?' } %></td>
   <hr>
 <% end %>
