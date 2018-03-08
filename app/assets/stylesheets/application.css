@@ -15,5 +15,9 @@
  */
 
 body {
-  background-color: white;
+  background-color: light-blue;
+}
+
+.top a {
+  color: red;
 }
