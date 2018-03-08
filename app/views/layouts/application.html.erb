@@ -22,8 +22,7 @@
 
     <%= yield %>
 
-    <% if session[:source] %>
-      <p>Thanks for visiting us from <%= session[:source] %></p>
-    <% end %>
+    <%= soucre_helper "application" %>
+
   </body>
 </html>
