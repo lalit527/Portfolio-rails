@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/lalit527/portfolio_copyright_tool
+  revision: b3a6eb5f9b9053ad94a4ef51f8b8df2595990f12
+  specs:
+    portfolio_copyright_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -192,6 +198,7 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
+  portfolio_copyright_tool!
   puma (~> 3.7)
   rails (~> 5.1.5)
   sass-rails (~> 5.0)

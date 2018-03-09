@@ -16,4 +16,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    PortfolioCopyrightTool::Renderer.copyright 'Lalit', 'All rights reserved'
+  end
 end

@@ -55,3 +55,5 @@ gem 'devise', '~> 4.2'
 
 gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails'
+
+gem 'portfolio_copyright_tool', git: 'https://github.com/lalit527/portfolio_copyright_tool'
