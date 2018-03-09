@@ -109,7 +109,29 @@ body {
 /*
  * Custom css
 */
+.card {
+  padding: 15px;
+}
 .card-block {
   color: black;
   text-align: left;
+}
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }
