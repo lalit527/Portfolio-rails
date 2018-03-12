@@ -1,5 +1,1 @@
-<h1>Portfolio Page</h1>
-
-<%= link_to "Create New Item", new_portfol_path if logged_in?(:site_admin ) %>
-
 <%= render :partial => 'portfol', :collection => @portfolio_item, :as => :item  %>

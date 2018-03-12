@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -13,15 +15,21 @@
   <body>
     <%= render "shared/port_nav" %>
 
-    <%= render "shared/nav", location: 'top' %>
+    <main role="main">
 
-    <%= login_helper %>
+      <%= render "shared/port_masthead" %>
 
-    <%= yield %>
+      <div class="album py-5 bg-light">
+        <div class="container">
 
-    <%= @copyright %>
+          <div class="row">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <%= copyright_generator %>
+    <%= render "shared/port_footer" %>
 
     <%= soucre_helper "portfolio" %>
 
