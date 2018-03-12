@@ -1,32 +1,31 @@
-<h1>Create New Portfolio</h1>
-
 <%= form_for(@portfolio_item) do |form| %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class:'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :subtitle %>
-    <%= form.text_field :subtitle %>
+    <%= form.text_field :subtitle, class:'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, class:'form-control' %>
   </div>
 
-  <ul>
+  <div>
+    <h2>Technologies used</h2>
     <%= form.fields_for :technologies do |technology_form| %>
-      <li>
+      <div class="form-group">
         <%= technology_form.label :name %>
-        <%= technology_form.text_field :name %>
-      </li>
+        <%= technology_form.text_field :name, class:'form-control' %>
+      </div>
     <% end %>
-  </ul>
+  </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Submit", class:'btn btn-primary' %>
   </div>
 <% end %>
