@@ -59,3 +59,9 @@ gem 'jquery-rails'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 gem 'portfolio_copyright_tool', git: 'https://github.com/lalit527/portfolio_copyright_tool'
+
+gem "font-awesome-rails"
+
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'bootstrap_form'
+gem 'bootstrap4-kaminari-views'

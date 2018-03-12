@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import "font-awesome";
 /*
  * Globals
  */
@@ -233,4 +233,12 @@ h6, .h6 {
 .topic-index > .card {
   margin: 10px;
   padding: 20px;
+}
+
+/*
+* Custom Styles
+*/
+
+.social-links li {
+  font: 2.5em;
 }
