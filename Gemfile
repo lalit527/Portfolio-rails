@@ -65,3 +65,4 @@ gem "font-awesome-rails"
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'bootstrap_form'
 gem 'bootstrap4-kaminari-views'
+gem 'jquery-ui-rails'

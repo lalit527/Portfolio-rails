@@ -1,5 +1,5 @@
-<div class="col-md-4">
-  <div class="card mb-4 box-shadow">
+
+  <div class="card mb-4 box-shadow" data-id="<%= item.id %>">
     <%= image_tag item.thumb_image unless item.thumb_image.nil? %>
     <div class="card-body">
       <p class="card-text">
@@ -19,4 +19,10 @@
       </div>
     </div>
   </div>
-</div>
+
+<!-- <div class="card" data-id="<%= item.id %>">
+  <%= image_tag item.thumb_image unless item.thumb_image.nil? %>
+  <p class="card-text">
+    <span><%= link_to item.title, portfolio_show_path(item) %></span> <%= item.subtitle %>
+  </p>
+</div> -->
