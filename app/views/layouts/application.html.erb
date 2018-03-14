@@ -21,15 +21,27 @@
   </head>
 
   <body>
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <%= render "shared/application_nav" %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+          <%= video_tag(
+              'HardDrivePhotojpeg.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'home_bg.png'
+            )
+            %>
+            <%= render "shared/application_nav" %>
 
-      <%= yield %>
+            <%= yield %>
 
-      <%= render "shared/application_footer" %>
+            <%= render "shared/application_footer" %>
 
-      <%= soucre_helper "application" %>
+            <%= soucre_helper "application" %>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>
