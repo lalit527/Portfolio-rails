@@ -25,7 +25,6 @@ class PortfolsController < ApplicationController
 
   def new
     @portfolio_item = Portfol.new
-    3.times { @portfolio_item.technologies.build }
   end
 
   def create
