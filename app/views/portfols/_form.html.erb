@@ -1,5 +1,11 @@
 <%= form_for(@portfolio_item) do |form| %>
 
+  <% if @portfolio_item.errors.any? %>
+      <% @portfolio_item.errors.full_messages.each do |message| %>
+        <%= alert_generator message %>
+      <% end %>
+  <% end %>
+
   <div class="form-group">
     <%= form.label :title %>
     <%= form.text_field :title, class:'form-control' %>
@@ -30,11 +36,12 @@
   <div>
     <h2>Technologies used</h2>
     <%= form.fields_for :technologies do |technology_form| %>
-      <div class="form-group">
-        <%= technology_form.label :name %>
-        <%= technology_form.text_field :name, class:'form-control' %>
-      </div>
+      <%= render 'technology_fields', f:technology_form  %>
     <% end %>
+
+    <div>
+        <%= link_to_add_association 'Add Technology', form, :technologies %>
+    </div>
   </div>
 
   <div class="form-group">
