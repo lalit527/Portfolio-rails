@@ -8,4 +8,9 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def tech_news
+    @tweets = ConfigTool.twitter_search
+  end
+
 end
